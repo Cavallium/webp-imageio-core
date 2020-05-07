@@ -37,7 +37,7 @@ if you use maven, you can put it `${project.basedir}/libs`, and edit config file
 <dependency>  
     <groupId>com.github.nintha</groupId>  
     <artifactId>webp-imageio-core</artifactId>  
-    <version>{versoin}</version>  
+    <version>{version}</version>  
     <scope>system</scope>  
     <systemPath>${project.basedir}/libs/webp-imageio-core-{version}.jar</systemPath>  
 </dependency>
