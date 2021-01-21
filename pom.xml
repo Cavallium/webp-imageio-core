@@ -8,6 +8,27 @@
     <artifactId>webp-imageio-core</artifactId>
     <version>0.1.3</version>
 
+    <repositories>
+        <repository>
+            <id>mchv-release</id>
+            <name>MCHV Release Apache Maven Packages</name>
+            <url>https://mvn.mchv.eu/repository/mchv</url>
+        </repository>
+        <repository>
+            <id>mchv-snapshot</id>
+            <name>MCHV Snapshot Apache Maven Packages</name>
+            <url>https://mvn.mchv.eu/repository/mchv-snapshot</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>mchv-release</id>
+            <name>MCHV Apache Release Maven Packages Distribution</name>
+            <url>https://mvn.mchv.eu/repository/mchv</url>
+        </repository>
+    </distributionManagement>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
