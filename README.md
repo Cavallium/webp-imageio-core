@@ -1,5 +1,4 @@
 # webp-imageio-core
-forked from qwong/j-webp
 Java Image I/O reader and writer for the Google WebP image format without system lib file.
 
 In source program, coders need to put native lib files like .so/.dll/.dylib into the folder of `java.library.path`.
@@ -19,27 +18,18 @@ Update 20191029:
 
 ## Usage
 
-Because it is not in maven repo,  so you have to put the jar file `webp-imageio-core-{version}.jar` into libs folder of your project manually.
-
-[Download jar](https://github.com/nintha/webp-imageio-core/releases)
-
-if you use gradle, you can put it into `src/main/resource/libs`, and edit config file`build.gradle` to add local dependencies
-
-```groovy
-dependencies {
-    compile fileTree(dir:'src/main/resources/libs',include:['*.jar'])
-}
-```
-
-if you use maven, you can put it `${project.basedir}/libs`, and edit config file `pom.xml` to add local dependencies
-
 ```xml
+<repositories>
+    <repository>
+        <id>mchv-release</id>
+        <name>MCHV Release Apache Maven Packages</name>
+        <url>https://mvn.mchv.eu/repository/mchv</url>
+    </repository>
+</repositories>
 <dependency>  
     <groupId>com.github.nintha</groupId>  
     <artifactId>webp-imageio-core</artifactId>  
     <version>{version}</version>  
-    <scope>system</scope>  
-    <systemPath>${project.basedir}/libs/webp-imageio-core-{version}.jar</systemPath>  
 </dependency>
 ```
 
